@@ -1,6 +1,16 @@
 # Read Me
 ###### Application uses **Java 17 SDK**
 
+## How to run
+1. Pull and Build the project.
+2. Run the Wf86TestApplication, by default it will run on port 8080.
+3. There is one only API to hit. Use Postman to hit the API with following properties:
+    1. Set the method to POST.
+    2. Fill the address bar with this address: localhost:8080/api/query
+    3. Add the JSON request body from the shared examples.
+    4. Click Send.
+4. Check the response in Postman.
+
 ## Deliverables
 1. JSON formatted if-statements query are attached in the zip file. These queries can also be used as input in the request.
 2. 3 Examples are also included in the report with different conditions and variable values.
@@ -23,15 +33,6 @@
 5. After processing, it will return the QueryResponse objects with the result and query.
 6. As JSON is converted into the query objects, it can be converted to any other form as required.
 
-## How to run
-1. Unzip the file, load into any IDE and build the project.
-2. Run the Wf86TestApplication, by default it will run on port 8080.
-3. There is one only API to hit. Use Postman to hit the API with following properties:
-   1. Set the method to POST.
-   2. Fill the address bar with this address: localhost:8080/api/query
-   3. Add the JSON request body from the shared examples.
-   4. Click Send.
-4. Check the response in Postman.
 
 Example:
 ![](../../../../../var/folders/pp/q274wp7x0fn6g9p6qzsfk_b40000gn/T/TemporaryItems/NSIRD_screencaptureui_8qchrH/Screenshot 2023-10-20 at 1.57.03 pm.png)

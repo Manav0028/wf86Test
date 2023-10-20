@@ -1,0 +1,32 @@
+{
+    "query": {
+        "conditions": [
+            {
+                "variable": "b",
+                "expectedValue": 14,
+                "operator": ">"
+            }
+        ],
+        "thenObject": true,
+        "elseObjects": [
+            {
+                "ifObject": {
+                    "conditions": [
+                        {
+                            "variable": "b",
+                            "expectedValue": 10,
+                            "operator": "<"
+                        }
+                    ],
+                    "thenObject": true
+                }
+            },
+            {
+                "thenObject": false
+            }
+        ]
+    },
+    "queryInputs": {
+        "b": 12 // output should be false
+    }
+}

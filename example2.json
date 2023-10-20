@@ -1,0 +1,68 @@
+// userValue attribute inside conditions are commented, 
+// instead those variable values are being passed as map object
+{
+    "query": {
+        "conditions": [
+            {
+                "variable": "a",
+                "expectedValue": "abc",
+                "operator": "==",
+                "joinCondition": "&&"
+                // "userValue": "abc"
+            },
+            {
+                "variable": "b",
+                "expectedValue": 4,
+                "operator": "<",
+                "joinCondition": "||"
+                // "userValue": 20,
+            },
+            {
+                "variable": "c",
+                "expectedValue": "def",
+                "operator": "=="
+                // "userValue": "cool"
+            }
+        ],
+        "thenObject": true,
+        "elseObjects": [
+            {
+                "ifObject": {
+                    "conditions": [
+                        {
+                            "variable": "b",
+                            "expectedValue": 10,
+                            "operator": "<"
+                            // "userValue": 20
+                        }
+                    ],
+                    "thenObject": true,
+                    "elseObjects": [
+                        {
+                            "ifObject": {
+                                "conditions": [
+                                    {
+                                        "variable": "d",
+                                        "expectedValue": "def",
+                                        "operator": "=="
+                                        // "userValue": "def"
+                                    }
+                                ],
+                                "thenObject": true
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "thenObject": true
+            }
+        ]
+    },
+    "queryInputs": {
+        "a": "abc",
+        "b": 20,
+        "c": "cool",
+        "d": "def" // overall output should be true
+    }
+}

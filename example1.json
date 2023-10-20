@@ -1,0 +1,39 @@
+{
+    "query": {
+        "conditions": [
+            {
+                "variable": "a",
+                "expectedValue": "abc",
+                "operator": "==",
+                "joinCondition": "&&"
+            },
+            {
+                "variable": "b",
+                "expectedValue": 4,
+                "operator": ">"
+            }
+        ],
+        "thenObject": true,
+        "elseObjects": [
+            {
+                "ifObject": {
+                    "conditions": [
+                        {
+                            "variable": "b",
+                            "expectedValue": 10,
+                            "operator": "<"
+                        }
+                    ],
+                    "thenObject": true
+                }
+            },
+            {
+                "thenObject": false
+            }
+        ]
+    },
+    "queryInputs": {
+        "a": "abc",
+        "b": 2 // output should be true
+    }
+}

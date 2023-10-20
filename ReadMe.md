@@ -35,7 +35,8 @@
 
 
 Example:
-![](../../../../../var/folders/pp/q274wp7x0fn6g9p6qzsfk_b40000gn/T/TemporaryItems/NSIRD_screencaptureui_8qchrH/Screenshot 2023-10-20 at 1.57.03 pm.png)
+<img width="865" alt="Screenshot 2023-10-20 at 2 48 03 pm" src="https://github.com/Manav0028/wf86Test/assets/12201377/aa041e0a-8fb0-464e-9ec8-c9b648261381">
+
 
 ### Note:
 ###### Variable names defined in query object conditions should match with UserInputs variables. The values are mapped with the variable names.
